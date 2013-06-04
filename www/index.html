@@ -82,15 +82,15 @@
             }
                         
             function onLoadStart(event) {
-                alert(event.type + ' - ' + event.url);
+                //alert(event.type + ' - ' + event.url); 
             }
 
             function onLoadStop(event) {
-                alert(event.type + ' - ' + event.url);
+                //alert(event.type + ' - ' + event.url);
             }
 
             function onExit(event) {
-                alert(event.type);
+                //alert(event.type);
                 if (iabRef) {
                     iabRef.removeEventListener('loadstart', onLoadStart);
                     iabRef.removeEventListener('loadstart', onLoadStop);
