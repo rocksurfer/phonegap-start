@@ -44,6 +44,10 @@
             
             var iabRef = null;
             
+            // Wait for Cordova to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+            
            // CPhoneGap is ready
     //
     function onDeviceReady() {
